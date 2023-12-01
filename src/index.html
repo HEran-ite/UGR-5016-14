@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
-                <ul>
-                    <li>
-                        <a  href="index.html">HOME</a>
-                        <a  href="about-me.html">ABOUT ME </a>
-                        <a  href="education.html">EDUCATION</a>
-                        <a  href="skills.html">SKILLS</a>
-                        <a  href="resume.html">RESUME</a>
-                        <a  href="credentials.html">CREDIENTIALS</a>
-                    </li>
-                </ul>
+        <div class="menu-container">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="menu-toggle">
+                &#9776;
+            </label>
+            <menu class="menu">
+                    <ul>
+                        <li><a  href="index.html">HOME</a></li>
+                        <li><a  href="about-me.html">ABOUT ME </a></li>
+                        <li><a  href="education.html">EDUCATION</a></li>
+                        <li><a  href="skills.html">SKILLS</a></li>
+                        <li> <a  href="resume.html">RESUME</a></li>
+                        <li><a  href="credentials.html">CREDIENTIALS</a></li>
+                        
+                    </ul>
+            </menu>
+        </div>
 
         
         <div class="name">
@@ -27,46 +35,55 @@
         </div>
 
     </nav>
-    <section>
+    <section class="container">
 
-           <div class="slideshow-container">
+        <div class="slider-wrapper">      
+         <div class="slider">
+             <div  id="slide-1">
+                 <label for="slide2"></label>
+                 <div class="numbertext">1/ 4</div>
+                 <div class="vid">
+                 <video class="vid" controls="controls" >
+                     <source src="images/IMG_4253.MP4" type="video/mp4">
+                 </video>
+                 </div>
 
-            <div class="mySlides ">
-                <div class="numbertext">1/ 4</div>
-                <div class="vid">
-                <video  controls="controls" >
-                    <source src="images/IMG_4253.MP4" type="video/mp4">
-                </video>
-                </div>
-
-                <div class="text"></div>
-            </div>
-
-                <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/mypic2.jpeg" style="width:50%" alt="pic1">
-                <div class="text">"I am a young woman who is passionate about becoming a professional software engineer. Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering."
-                    </div>
-                </div>
-                <div class="mySlides fade">
-                <div class="numbertext">3/ 4</div>
+                 <div class="text"></div>
+             </div>
+             <div  id="slide-3">
+                <div class="numbertext">2/4</div>
+                <label for="slide3"></label>
                 <img src="images/study.jpeg" style="width:80%" alt="pic2">
                 <div class="text"> "Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios."</div>
-                </div>
-                
-                <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/back.jpeg" style="width:100%" alt="pic3">
-                <div class="text">
-                    "Apart from my technical skills, I also possess strong communication and interpersonal skills. I understand the importance of effective communication in software development, as it fosters collaboration and ensures that projects are completed successfully. I am a proactive learner and always strive to improve myself, whether it's through attending workshops, participating in hackathons, or engaging in online courses."
-                </div>
-                </div>
             </div>
-            </section>
-    <section>
-        <div>
+            
+             <div  id="slide-2">
+                 <div class="numbertext">3/ 4</div>
+                 <label for="slide4"></label>
+                 <img src="images/mypic2.jpeg" style="width:50%" alt="pic1">
+                 <div class="text">"I am a young woman who is passionate about becoming a professional software engineer."
+                     </div>
+             </div>
+
+                 
+             <div  id="slide-4">
+                 <div class="numbertext">4 / 4</div>
+                 <label for="slide1"></label>
+                 <img src="images/back.jpeg" style="width:100%" alt="pic3">
+                 <div class="text">
+                     "Apart from my technical skills, I also possess strong communication and interpersonal skills. I understand the importance of effective communication in software development, as it fosters collaboration and ensures that projects are completed successfully. I am a proactive learner and always strive to improve myself, whether it's through attending workshops, participating in hackathons, or engaging in online courses."
+                 </div>
+             </div>
+            </div>
+            
+             </div>
+         </div>
+         
+         </section>
+    <section class="welcome">
+        <div class="intro">
             <h1>WELCOME TO MY PAGE</h1>
-            <img src="images/mypic3.jpeg" alt="Heran Eshetu">
+            <img class="intro-pic" src="images/mypic3.jpeg" alt="Heran Eshetu">
             <article>
                 <blockquote>
                     I am Heran, a young and ambitious individual who is driven by unwavering enthusiasm for technology, a love for travel, and a passion for learning new things . I believe that through these diverse interests, I can contribute to the betterment of our world and inspire others to embrace their own unique blend of passions.
@@ -76,16 +93,15 @@
     </section>
     <div class="choices">
         <a href="about-me.html"><button>ABOUT ME </button></a>
-
         <a href="education.html"><button>EDUCATION</button></a>
         <a href="skills.html"><button>SKILLS</button></a>
         <a href="resume.html"><button>RESUME </button></a>
         <a href="credentials.html"><button>CREDENTIALS</button></a>
     </div>
+    <hr>
     <footer>
-        <h1>CONTACT</h1>
+        <h1>CONTACT</h1>  
     <address id="address"> 
-        <br>
         <div>
            <p>Phone: +25180499718 </p>
         </div>
@@ -94,7 +110,7 @@
             <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
         </div>
         <div>
-            <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
+            <a href="https://www.linkedin.com/in/heran-elala-110a88259/overlay/contact-info/"><img src="images/linkedin.png" alt="linkedin"></a>
         </div>
         <div>
             <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
@@ -104,15 +120,14 @@
         </div>
         
     </address>
-    <ul>
-        <li>
-            <a  href="about-me.html">ABOUT ME </a>
-            <a  href="education.html">EDUCATION</a>
-            <a  href="skills.html">SKILLS</a>
-            <a  href="resume.html">RESUME</a>
-            <a  href="credentials.html">CREDIENTIALS</a>
-        </li>
+    <ul class="footer-nav">
+        <li> <a  href="about-me.html">ABOUT ME </a></li>
+        <li><a  href="education.html">EDUCATION</a></li>
+        <li><a href="skills.html">SKILLS</a> </li>
+         <li><a  href="resume.html">RESUME</a></li>
+        <li><a  href="credentials.html">CREDIENTIALS</a> </li>
     </ul>
+
     </footer>
 </body>
 </html>

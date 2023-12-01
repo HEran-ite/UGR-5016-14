@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me </title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
-                <ul>
-                    <li>
-                        <a  href="index.html">HOME</a>
-                        <a  href="about-me.html">ABOUT ME </a>
-                        <a  href="education.html">EDUCATION</a>
-                        <a  href="skills.html">SKILLS</a>
-                        <a  href="resume.html">RESUME</a>
-                        <a  href="credentials.html">CREDIENTIALS</a>
-                    </li>
-                
-                </ul>
+        <div class="menu-container">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="menu-toggle">
+                &#9776;
+            </label>
+            <menu class="menu">
+                    <ul>
+                        <li><a  href="index.html">HOME</a></li>
+                        <li><a  href="about-me.html">ABOUT ME </a></li>
+                        <li><a  href="education.html">EDUCATION</a></li>
+                        <li><a  href="skills.html">SKILLS</a></li>
+                        <li> <a  href="resume.html">RESUME</a></li>
+                        <li><a  href="credentials.html">CREDIENTIALS</a></li>
+                        
+                    </ul>
+            </menu>
+        </div>
 
+        
         <div class="name">
             <strong>Heran Eshetu</strong> 
         </div>
@@ -28,13 +36,16 @@
 
     </nav>
     
-    <section>
+    <section class="desc">
         <h1>ABOUT ME </h1>
-        <img src="images/my-pic.jpeg" alt="Heran Eshetu">
-            <p> Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
-
-                Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
-                
+        <img class='my-pic'src="images/my-pic.jpeg" alt="Heran Eshetu">
+            <p> 
+                Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
+            </p>  
+            <p>
+                 Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
+            </p> 
+            <p> 
                 I believe that software engineering is not only about writing code but also about problem-solving and creativity. It requires a combination of analytical thinking, attention to detail, and the ability to collaborate effectively with others. I am constantly seeking to enhance my technical skills and stay up-to-date with the latest advancements in the field.
             </p>
             <audio controls>
@@ -42,7 +53,7 @@
               Your browser does not support the audio element.
               </audio>
             </section>
-    <section>
+    <section class="hobbies">
         <h2>Hobbies</h2>
         <ul>
             <li>Crocheting</li>
@@ -51,7 +62,7 @@
             <li>Cooking</li>
         </ul>
     </section>
-    <section>
+    <section class="visited">
         <h2>Places I visited </h2>
         <div>
             <img src="https://lh3.googleusercontent.com/p/AF1QipMClgtaj2eo5i5iRFTc9GJ9iREbb6glJNWAr5Rf" alt="Debre-Libanos">
@@ -78,6 +89,7 @@
             <a href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
         </div>
     </section>
+    <div class="acomp">
     <h2>Accomplishments</h2>
 
 <table>
@@ -124,36 +136,37 @@
     <td></td>
   </tr>
 </table>
+</div>
+   <hr>
     <footer>
-        <address id="address"> 
-            <br>
-            <div>
-               <p>phone: +25180499718 </p>
-            </div>
-            
-            <div>
-                <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
-            </div>
-            <div>
-                <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
-            </div>
-            <div>
-                <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
-            </div>
-            <div>
-                <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
-            </div>
-            
-        </address>
-        <ul>
-            <li>
-                <a  href="about-me.html">ABOUT ME </a>
-                <a  href="education.html">EDUCATION</a>
-                <a  href="skills.html">SKILLS</a>
-                <a  href="resume.html">RESUME</a>
-                <a  href="credentials.html">CREDIENTIALS</a>
-            </li>
-        </ul>
-     </footer>
+        <h1>CONTACT</h1>  
+    <address id="address"> 
+        <div>
+           <p>Phone: +25180499718 </p>
+        </div>
+        
+        <div>
+            <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/heran-elala-110a88259/overlay/contact-info/"><img src="images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <div>
+            <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
+        </div>
+        <div>
+            <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
+        </div>
+        
+    </address>
+    <ul class="footer-nav">
+        <li> <a  href="about-me.html">ABOUT ME </a></li>
+        <li><a  href="education.html">EDUCATION</a></li>
+        <li><a href="skills.html">SKILLS</a> </li>
+         <li><a  href="resume.html">RESUME</a></li>
+        <li><a  href="credentials.html">CREDIENTIALS</a> </li>
+    </ul>
+
+    </footer>
 </body>
 </html>

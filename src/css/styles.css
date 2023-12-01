@@ -1,0 +1,316 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    align-items: center;
+    max-width:750px;
+    background-color: #c1ddee;
+    border: solid;
+    color:black;
+    margin: 0px;
+}
+
+/* Basic styles */
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    display: block;
+
+}
+
+
+.menu {
+    display: none;
+     /* Hide menu by default */
+}
+menu li {
+  display:inline;
+  margin: 10px;
+}
+menu li :hover{
+  color:rgb(76, 179, 239);
+}
+  #toggle{
+    display:none;
+}
+
+  #toggle:checked + .menu-toggle + .menu {
+    display: block;
+}
+  #toggle:checked + menu+ div {
+    display: none;
+}
+  menu > ul{
+    list-style-type: none;
+}
+
+/* nav bar */
+nav{
+    align-items: center;
+    background-color: black;
+    color:white;
+    display: flex;
+    height:auto;
+    margin-bottom:30px;
+}
+.menu{
+    flex:1;
+    margin: 0;
+    padding: 0px;
+}
+.menu-container{
+  display: flex;
+  flex-direction: column;
+}
+.menu ul{
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+  padding: 0;
+}
+.name{
+    flex:2;
+    font-size:x-large;
+    padding:10px;
+}
+
+/* Homepage */
+
+/* slide show container */
+.slider-wraper{
+  position: relative;
+  max-width: 48rem;
+  height: auto;
+  margin: 0 auto;
+}
+.slider{
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+  border-radius: 0.5rem;
+}
+.slider div{
+  flex:1 0 100%;
+  width: 330px;
+  height: fit-content;
+  object-fit: cover;
+  position: relative;
+  display: inline-block;
+}
+.slider2 .text{
+  font-size: xx-small;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  
+  width:200px;
+  max-width: 300px;
+  text-align: center;
+
+}
+.slider .text{
+  font-size: xx-small;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 20px;
+  margin-left: 0px;
+  width:200px;
+  max-width: 300px;
+  text-align: center;
+}
+
+
+
+
+
+h1{
+  text-align: center;
+  width: 100%;}
+
+.slideshow{
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.slider video{
+  text-align: center;
+  width:330px;
+  height: fit-content;
+}
+
+
+.welcome{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Style the image */
+.intro-pic {
+    height: 90%;
+    width: 90%;
+}
+
+/* Style the blockquote */
+.intro blockquote {
+    color: #555;
+    font-style: italic;
+}
+
+.choices{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+button{
+    background-color: black;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    height:80px;
+    margin: 20px;
+    width:300px;
+}
+button:hover{
+ background-color: #c1ddee;
+ border-radius: 20px 0px 20px 0px;
+ color:#000;
+ height:80px;
+ width:350px;
+}
+
+/*footer*/   
+footer{
+  align-items: center;
+  display: flex;
+  flex-shrink: 3;
+  flex-wrap: wrap;
+}
+address p{
+  font-size: xx-small;
+}
+div ,a{
+    margin: 5px;
+}
+nav a{
+  color:white;
+  margin: 5px;
+  text-decoration: none;
+}
+#address{
+    display: flex;
+    flex: 1;
+    float :left;
+    padding: 0px;
+    flex-shrink: 3;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer-nav{
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    font-size: x-small;
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+ /*abbout me */
+ .desc{
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    text-align: left;
+}
+
+ p{
+    margin:20px;
+    text-align: center;
+}
+
+ .hobbies{
+    margin: 10px;
+    text-align: left;
+}
+ .visited{
+    text-align: center;
+}
+ .visited img {
+    height:90%;
+    width:90%;
+}
+ .my-pic{
+  height:90%;
+  margin: 20px;
+  width:90%;
+} 
+ .acomp{
+  margin: 10px;
+}
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+ /*Education*/
+ .edu{
+  margin: 20px;
+  text-align: left;
+  width:90%;
+}
+ /*resume*/
+ .resume-pic{
+  align-self: center;
+  height:90%;
+  width:90%;
+}
+ .resume{
+  text-align: center;
+}
+ button a{
+  color:white;
+  text-decoration: none;
+}
+
+/* skills*/
+figure img{
+  height: 90%;
+  width:90%;
+}
+.skills{
+  margin:20px;
+}
+.skills > a{
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+}
+.btn{
+  text-align: center;
+}
+
+/*credentials*/
+.certeficate{
+  height:90%;
+  width:90%;
+}
