@@ -1,0 +1,365 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    align-items: center;
+    max-width: 750px;
+    background-color: #c1ddee;
+    color:black;
+    margin: 0px;
+
+}
+
+/* Basic styles */
+
+.menu-toggle {
+    /* Add styling for the menu icon */
+    font-size: 24px; /* Adjust the size as needed */
+    cursor: pointer;
+  }
+  
+  /* Responsive behavior */
+  .menu {
+    display: none; /* Hide menu by default */
+  }
+menu li {
+  display:inline;
+  margin: 10px;
+
+}
+menu li :hover{
+  color:rgb(76, 179, 239);
+}
+  #toggle{
+    display:none;
+  }
+  
+  #toggle:checked + .menu-toggle + .menu {
+    display: block;
+  }
+  #toggle:checked + menu+ div {
+    display: none;
+ 
+  }
+  menu > ul{
+    list-style-type: none;
+    
+  }
+
+  .menu-toggle {
+      display: block; /* Show menu icon for smaller screens */
+    }
+  
+   .menu {
+      display: none; /* Hide menu for smaller screens */
+      padding: 0px;
+      margin: 0;
+    }
+  h1{
+      text-align: center;
+      width: 100%;
+    }
+
+
+
+  
+/* nav bar */
+nav{
+    display: grid;
+
+    grid-template-areas:
+      ' menu-toggle name name contact contact contact contact';
+
+    column-gap: 10px;
+    align-items: center;
+    height:auto;
+    margin-bottom:30px;
+    background-color: black;
+    color:white;
+
+
+
+  
+}
+
+.menu-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.menu ul{
+  display: grid;
+  grid-template-rows: 1fr;
+  font-size: smaller;
+  padding: 0;
+
+}
+.name{
+    padding:10px;
+    font-size:x-large;
+}
+
+
+
+
+
+
+/* Homepage */
+
+/* slide show container */
+.slider-wraper{
+  position: relative;
+  max-width: 48rem;
+  height: auto;
+  margin: 0 auto;
+}
+.slider{
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+  border-radius: 0.5rem;
+}
+.slider div{
+  flex:1 0 100%;
+  width: 330px;
+  height: fit-content;
+  object-fit: cover;
+  position: relative;
+  display: inline-block;
+}
+.slider2 .text{
+  font-size: xx-small;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  
+  width:200px;
+  max-width: 300px;
+  text-align: center;
+
+}
+.slider .text{
+  font-size: xx-small;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 20px;
+  margin-left: 0px;
+  width:200px;
+  max-width: 300px;
+  text-align: center;
+}
+
+
+
+h1{
+  text-align: center;
+  width: 100%;}
+
+.slideshow{
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.slider video{
+  margin-left: 20px;
+  text-align: center;
+  width:330px;
+  height: fit-content;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Style the image */
+.intro-pic {
+    width: 90%;
+    height: 90%;
+}
+
+/* Style the blockquote */
+.intro blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+.choices{
+    display:grid;
+    grid-template-rows: repeat(5,1fr);
+    text-align: center;
+    align-items: center;
+
+    
+}
+button{
+    width:300px;
+    height:80px;
+    margin: 20px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+button:hover{
+ background-color: #c1ddee;
+ color:#000;
+ width:350px;
+ height:80px;
+ border-radius: 20px 0px 20px 0px;
+}
+
+
+/*footer*/   
+footer{
+  display: grid;
+  grid-template-columns:repeat(3,auto);
+  align-items: center;
+
+}
+footer h1{
+  grid-row: 1;
+}
+
+
+.contact{
+  text-align: right;
+  right: 0;
+}
+    
+
+nav a{
+  margin: 5px;
+  color:white;
+  text-decoration: none;
+  
+  
+}
+#address{
+    text-align: center;
+    grid-row: 2;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    float :left;
+    padding: 0px;
+
+}
+address p{
+  font-size: xx-small;
+}
+footer{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr ;
+}
+.footer-nav{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    align-items: baseline;
+    float: right;
+    font-size: x-small;
+}
+
+
+ /*abbout me */
+ .desc{
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+ }
+
+ p{
+    margin:20px;
+    text-align: center;
+
+ }
+
+ .hobbies{
+    text-align: left;
+    margin: 10px;
+ }
+ .visited{
+    text-align: center;
+ }
+ .visited img {
+    width:90%;
+    height:90%;
+ }
+ .my-pic{
+  margin: 20px;
+    width:90%;
+    height:90%;
+ } 
+ .acomp{
+  margin: 10px;
+ }
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+ /*Education*/
+ .edu{
+  text-align: left;
+  margin: 20px;
+  width:90%;
+ }
+ /*resume*/
+ .resume-pic{
+  width:90%;
+  height:90%;
+  align-self: center;
+ }
+ .resume{
+  text-align: center;
+ }
+ button a{
+  color:white;
+  text-decoration: none;
+  
+ }
+
+/* skills*/
+figure img{
+  width:90%;
+  height: 90%;
+}
+.skills{
+  margin:20px;
+}
+.skills > a{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.btn{
+  text-align: center;
+}
+
+/*credentials*/
+.certeficate{
+  width:90%;
+  height:90%;
+}
