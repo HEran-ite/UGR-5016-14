@@ -13,37 +13,37 @@ body{
 /*------------------------------------*\
   #SECTION-Menu
 \*------------------------------------*/
-.menu-toggle {
+.nav__menu-toggle {
   cursor: pointer;
   font-size: 24px;
   display: block;
 
 }
-.menu {
+.nav__menu {
   display: none;
 
 }
-menu li {
+.nav__menu li {
 display:inline;
 margin: 10px;
 }
-menu li :hover{
+.nav__menu li :hover{
 color:rgb(76, 179, 239);
 }
-#toggle{
+.nav__toggle{
   display:none;
 }
 
-#toggle:checked +.menu-toggle + .logo + .menu {
+.nav__toggle:checked +.nav__menu-toggle + .nav__logo + .nav__menu {
   display: block;
 }
-#toggle:checked +.menu-toggle + .logo  {
+.nav__toggle:checked +.nav__menu-toggle + .nav__logo  {
   display: none;
 }
-#toggle:checked +.menu-toggle + .logo+  .menu +div {
+.nav__toggle:checked +.nav__menu-toggle + .nav__logo+  .nav__menu +.nav__contact {
   display: none;
 }
-menu > ul{
+.nav__menu > ul{
   list-style-type: none;
 }
 
@@ -53,7 +53,7 @@ menu > ul{
 /*------------------------------------*\
   #SECTION-Navigation Bar
 \*------------------------------------*/
-nav{
+.nav{
   align-items: center;
   background-color: black;
   color:white;
@@ -63,57 +63,58 @@ nav{
   height:auto;
   margin-bottom:30px;
 }
-.menu{
+.nav__menu{
   flex:1;
   margin: 0;
   padding: 0px;
 }
 
-.menu ul{
+.nav__menu ul{
 display: flex;
 flex-direction: column;
 font-size: small;
 padding: 0;
 }
-.logo{
+.nav__logo{
   flex:2;
   justify-content: left;
   font-size:x-large;
   padding:10px;
 }
-.contact :hover{
+.nav__contact :hover{
   background-color: #c1ddee;
   color:rgb(76, 179, 239);
   min-width: 100px;
   padding: 10px;
   border-radius: 50px; 
 }
+.nav a{
+  color:white;
+  margin: 5px;
+  text-decoration: none;
+  }
 
 /*------------------------------------*\
   #SECTION-Footer
 \*------------------------------------*/
-footer{
+.footer{
   align-items: center;
   display: flex;
   flex-shrink: 3;
   flex-wrap: wrap;
   }
-  address p{
+  .footer__address p{
   font-size: xx-small;
   }
   div ,a{
     margin: 5px;
   }
-  nav a{
-  color:white;
-  margin: 5px;
-  text-decoration: none;
-  }
-  footer h1{
+ 
+  .footer h1{
     text-align: left;
     padding-left: 10px;
   }
-  #address{
+  .footer__address{
     display: flex;
     flex: 1;
     float :left;
@@ -124,7 +125,7 @@ footer{
   
   }
   
-  .footer-nav{
+  .footer__footer-nav{
     align-items: baseline;
     display: flex;
     flex-direction: row;
@@ -146,13 +147,13 @@ footer{
 .container{
   height: 40%;
 }
-.slider-wraper{
+.container__slider-wrapper{
 position: relative;
 max-width: fit-content;
 height: auto;
 margin: 0 auto;
 }
-.slider{
+.container__slider-wrapper__slider{
 display: flex;
 text-align: center;
 aspect-ratio: 16/9;
@@ -162,7 +163,7 @@ scroll-behavior:smooth;
 box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
 border-radius: 0.5rem;
 }
-.slider div{
+.container__slider-wrapper__slider div{
 flex:1 0 100%;
 width: 330px;
 height: auto;
@@ -171,7 +172,7 @@ position: relative;
 display: inline-block;
 }
 
-.slider .text{
+.container__slider-wrapper__slider .container__slider-wrapper__slider__slide__text{
 font-size: xx-small;
 position: absolute;
 top: 50%;
@@ -183,7 +184,7 @@ padding: 20px;
 margin-left: 0px;
 width:70%;
 }
-#slide-3 .text{
+.container__slider-wrapper__slider__slide-3 .container__slider-wrapper__slider__slide__text{
   width:150px;
 }
 
@@ -197,17 +198,17 @@ align-items:first baseline;
 display: flex;
 text-align: center;
 }
-.slider video{
+.container__slider-wrapper__slider  video{
 text-align: center;
 width:90%;
 height: 90%;
 }
-.slider img {
+.container__slider-wrapper__slider img {
   height:90%;
   width:90%;
 
 }
-.number-text{
+.container__slider-wrapper__slider__slide-1__number-text{
   padding: 0;
   margin: 0;
   font-weight: bolder;
@@ -223,7 +224,7 @@ height: 90%;
   justify-content: center;
   flex-direction: column;
 }
-.intro {
+.welcome__intro {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -231,12 +232,12 @@ height: 90%;
   text-align: center;
 }
 
-.intro-pic {
+.welcome__intro__intro-pic {
   height: 90%;
   width: 90%;
 }
 
-.intro blockquote {
+.welcome__intro .welcome__intro__blockquote {
   color: #555;
   font-style: italic;
 }
@@ -268,7 +269,7 @@ width:350px;
 /*------------------------------------*\
   #SECTION-About Me 
 \*------------------------------------*/
-.desc{
+.description{
   align-items: center;
   flex-direction: column;
   margin: 10px;
@@ -296,7 +297,7 @@ p{
   height:90%;
   width:90%;
 }
-.my-pic{
+.description__wrap__my-pic{
 height:90%;
 margin: 20px;
 width:90%;
@@ -304,7 +305,7 @@ width:90%;
 .acomp{
 margin: 10px;
 }
-table, th, td {
+.acomp__table, th, td {
 border: 1px solid black;
 border-collapse: collapse;
 }
@@ -318,7 +319,7 @@ border-collapse: collapse;
 margin: 20px;
 width:90%;
 }
-.big-div{
+.edu__big-div{
   padding-left: 5%;
  }
  .edu h1{
@@ -330,7 +331,7 @@ width:90%;
 /*------------------------------------*\
   #SECTION-RESUME
 \*------------------------------------*/
-.resume-pic{
+.resume__resume-pic{
 align-self: center;
 height:90%;
 width:90%;
@@ -342,13 +343,16 @@ button a{
 color:white;
 text-decoration: none;
 }
+.download-btn__btn{
+  text-align: center;
+  }
 
 
 
 /*------------------------------------*\
   #SECTION-SKILLS
 \*------------------------------------*/
-figure img{
+.skills__figure-1 img{
 height: 90%;
 width:90%;
 }
@@ -360,9 +364,7 @@ font-size: xx-large;
 font-weight: bolder;
 text-align: center;
 }
-.btn{
-text-align: center;
-}
+
 
 
 
@@ -372,7 +374,7 @@ text-align: center;
 .creds{
   text-align:  center;
 }
-.certeficate{
+.creds__certeficate{
   height:70%;
   width:70%;
 }
@@ -395,19 +397,19 @@ text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .intro {
+  .welcome__intro {
     display: flex;
     flex-direction: row;
     width:100%;
 
   }
-  .intro-pic{
+  .iwelcome__intro__intro-pic{
     width: 50%;
   }
-  .intro h1{
+  .welcome__intro h1{
     display:block;
   }
-  blockquote{
+  .welcome__intro__blockquote{
     width: 70%;
   }
   .choices{
@@ -433,49 +435,49 @@ text-align: center;
   #SECTION-ABOUT ME
 \*------------------------------------*/
 
-  .wrap{
+  .description__wrap{
     display: flex;
     flex-direction: row;
   }
-  .my-pic{
+  .description__wrap__my-pic{
     width:40%;
   
   }
-  .text-audio{
+  .description__wrap__text-audio{
     text-align: center;
     padding-top: 5px;
   }
-  .text-audio p {
+  .description__wrap__text-audio p {
     font-size: 70%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   }
-  audio{
+  .audio{
     margin:30px;
   }
-  .hobby{
+  .hobbies__hobby{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     padding:50px;
     padding-top: 0px;
   }
-  .images{
+  .visited__images{
     display: flex;
     flex-direction:row ;
 
   }
-  .images img{
+  .visited__images img{
     height:50%;
   }
 
-  .images .debre{
+  .visited__images .visited__images__debre{
     height:30%;
   }
   .acomp{
     padding-top: 20px;
   }
-  table{
+  .acomp__table{
     align-self: center;
     width: 80%;
   }
@@ -486,13 +488,13 @@ text-align: center;
   #SECTION-EDUCATION
 \*------------------------------------*/
 
-  .big-div{
+  .edu__big-div,.skills__big-div{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 
   }
-  .segment{
+  .edu__big-div__segment ,.skills__big-div__segment{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -504,11 +506,9 @@ text-align: center;
   #SECTION-SKILLS
   \*------------------------------------*/
 
-.projects{
+.skills__projects{
  padding-left: 250px;
  
-}
-
 
 
 /*------------------------------------*\
@@ -518,11 +518,11 @@ text-align: center;
 .download-btn{
   text-align: center;
 }
-.download-btn .btn{
+.download-btn .download-btn__btn{
   width:80%;
 
 }
-.download-btn .btn :hover{
+.download-btn .download-btn__btn :hover{
   width:90%;
 }
 
@@ -536,11 +536,11 @@ text-align: center;
   #SECTION-HOME
   \*------------------------------------*/
 
-  #slide-3 .text{
+  .container__slider-wrapper__slider__slide-3  .container__slider-wrapper__slider__slide__text{
     width:30%;
     margin-left: 30%;
   }
-  #slide-3 img {
+ .container__slider-wrapper__slider__slide-3 img {
     float: left;
     margin-left:30px ;
   }
@@ -549,19 +549,19 @@ text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .intro {
+  .welcome__intro {
     display: flex;
     flex-direction: row;
     width:100%;
 
   }
-  .intro-pic{
+  .welcome__intro__intro-pic{
     width: 50%;
   }
-  .intro h1{
+  .welcome__intro h1{
     display:block;
   }
-  blockquote{
+  .welcome__intro__blockquote{
     width: 80%;
   }
   .choices{
@@ -582,7 +582,7 @@ text-align: center;
     height:70px;
     width:125px;
   }
-  .footer-nav{
+  .footer__footer-nav{
     float: right;
   }
 
@@ -592,19 +592,19 @@ text-align: center;
    #SECTION-ABOUT ME
   \*------------------------------------*/
 
-   .wrap{
+   .description__wrap{
     display: flex;
     flex-direction: row;
   }
-  .my-pic{
+  .description__wrap__my-pic{
     width:40%;
   
   }
-  .text-audio{
+  .description__wrap__text-audio{
     text-align: center;
     padding-top: 5px;
   }
-  .text-audio p {
+  .description__wrap__text-audio p {
     font-size: 75%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
@@ -613,7 +613,7 @@ text-align: center;
   audio{
     margin:30px;
   }
-  .hobby{
+  .hobbies__hobby{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -625,17 +625,17 @@ text-align: center;
     flex-direction:row ;
 
   }
-  .images img{
+  .visited__images img{
     height:50%;
   }
 
-  .images .debre{
+  .visited__images .visited__images__debre{
     height:30%;
   }
   .acomp{
     padding-top: 20px;
   }
-  table{
+  .acomp__table{
     align-self: center;
     width: 80%;
   }
@@ -647,7 +647,7 @@ text-align: center;
   #SECTION-SKILLS
   \*------------------------------------*/
 
-  .projects{
+  .skills__projects{
    padding-left: 250px;
    
   }
@@ -661,11 +661,11 @@ text-align: center;
   .download-btn{
     text-align: center;
   }
-  .download-btn .btn{
+  .download-btn .download-btn__btn{
     width:80%;
   
   }
-  .download-btn .btn :hover{
+  .download-btn .download-btn__btn :hover{
     width:90%;
   }
 }
@@ -679,30 +679,30 @@ text-align: center;
   #SECTION-navigation bar
   \*------------------------------------*/
 
-  .menu {
+  .nav__menu {
     display: block;
   }
  
-  .menu ul{
+  .nav__menu ul{
     display: flex;
     flex-direction: row;
     float:right;
     font-size:medium;
     align-items: center;
     }
-    .menu ul li{
+    .nav__menu ul li{
       text-align: center;
       min-width: 100px;
     }
-    .menu ul li:hover{
+    .nav__menu ul li:hover{
       background-color: #c1ddee;
       padding: 10px;
       border-radius: 50px;
     }
-    #toggle:checked +.menu-toggle + .logo  {
+    .nav__toggle:checked +.nav__menu-toggle + .nav__logo  {
       display: block;
     }
-    #toggle:checked +.menu-toggle + .logo+  .menu +div {
+    .nav__toggle:checked +.nav__menu-toggle + .nav__logo+  .nav__menu +.nav__contact {
       display: block;
     }
 
@@ -712,14 +712,14 @@ text-align: center;
   #SECTION-HOME
   \*------------------------------------*/
 
-  .slider .text{
+  .container__slider-wrapper__slider .container__slider-wrapper__slider__slide__text{
       font-size: larger;
   }
-  #slide-3 .text{
+  .container__slider-wrapper__slider__slide-3 .container__slider-wrapper__slider__slide__text{
     width:30%;
     margin-left: 30%;
   }
-  #slide-3 img {
+  .container__slider-wrapper__slider__slide-3 img {
     float: left;
     margin-left:30px ;
   }
@@ -740,7 +740,7 @@ text-align: center;
   #SECTION-ABOUT ME
 \*------------------------------------*/
 
-  .text-audio p {
+  .description__wrap__text-audio p {
     font-size: 110%;
   }
 
@@ -750,16 +750,17 @@ text-align: center;
   #SECTION-EDUCATION
 \*------------------------------------*/
 
-  .big-div{
+  .edu__big-div{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 
   }
-  .segment{
+  .edu__big-div__segment{
     display: flex;
     flex-direction: column;
     width: 50%;
   }
 
+}
 }
