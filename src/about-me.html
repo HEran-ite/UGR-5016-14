@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="toggle" />
-        <label for="toggle" class="menu-toggle">
+    <nav class="nav">
+        <input type="checkbox" id="toggle" class="nav__toggle" />
+        <label for="toggle" class="nav__menu-toggle">
             &#9776;
         </label>
-        <div class="logo">
+        <div class="nav__logo">
             <strong>Heran Eshetu</strong> 
         </div>
-        <menu class="menu">
+        <menu class="nav__menu">
                 <ul>
                     <li><a  href="index.html">HOME</a></li>
                     <li><a  href="about-me.html">ABOUT ME </a></li>
@@ -26,18 +26,18 @@
                     
                 </ul>
         </menu>
-        
-        <div class="contact">
-            <a href="#address">CONTACT</a>
+
+        <div class="nav__contact" >
+            <a href="#address" >CONTACT</a>
         </div>
 
     </nav>
     
-    <section class="desc">
+    <section class="description">
         <h1>ABOUT ME </h1>
-        <div class="wrap">
-        <img class='my-pic'src="images/my-pic.jpeg" alt="Heran Eshetu">
-        <div class="text-audio">
+        <div class="description__wrap">
+        <img class='description__wrap__my-pic'src="images/my-pic.jpeg" alt="Heran Eshetu">
+        <div class="description__wrap__text-audio">
             <p> 
                 Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
             </p>  
@@ -56,7 +56,7 @@
     </section>
     <section class="hobbies">
         <h2>Hobbies</h2>
-        <ul class="hobby">
+        <ul class="hobbies__hobby">
             <li>Crocheting</li>
             <li>Writing</li>
             <li>Photography</li>
@@ -65,11 +65,11 @@
     </section>
     <section class="visited">
         <h2>Places I visited </h2>
-        <div class="images">
+        <div class="visited__images">
         <div>
             <img src="https://lh3.googleusercontent.com/p/AF1QipMClgtaj2eo5i5iRFTc9GJ9iREbb6glJNWAr5Rf" alt="Debre-Libanos">
             <h3>Debre-Libanos Gedam</h3>
-            <p class="debre">Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
+            <p class="visited__images__debre">Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
             <a href="https://www.destimap.com/index.php?act=attraction&a=Debre-Libanos%2C-Debre-Libanos%2C-Ethiopia">Explore>></a>
         </div>
         <div>
@@ -95,7 +95,7 @@
     <div class="acomp">
     <h2>Accomplishments</h2>
 
-<table>
+<table class="acomp__table">
   <tr>
     <th>Task</th>
     <th>No progress</th>
@@ -141,9 +141,9 @@
 </table>
 </div>
    <hr>
-    <footer>
+    <footer class="footer">
         <h1>CONTACT</h1>  
-    <address id="address"> 
+    <address class="footer__address" id="address"> 
         <div>
            <p>Phone: +25180499718 </p>
         </div>
@@ -162,7 +162,7 @@
         </div>
         
     </address>
-    <ul class="footer-nav">
+    <ul class="footer__footer-nav">
         <li> <a  href="about-me.html">ABOUT ME </a></li>
         <li><a  href="education.html">EDUCATION</a></li>
         <li><a href="skills.html">SKILLS</a> </li>
