@@ -2,8 +2,11 @@
 /* Basic styles */
 *{
   font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 body{
+  background-color: #c1ddee;
+  margin: 0px;
   background-color: #c1ddee;
   margin: 0px;
 }
@@ -17,6 +20,9 @@ body{
   cursor: pointer;
   font-size: 24px;
   display: block;
+  cursor: pointer;
+  font-size: 24px;
+  display: block;
 
 }
 .menu {
@@ -26,14 +32,21 @@ body{
 menu li {
 display:inline;
 margin: 10px;
+display:inline;
+margin: 10px;
 }
 menu li :hover{
+color:rgb(76, 179, 239);
 color:rgb(76, 179, 239);
 }
 #toggle{
   display:none;
+#toggle{
+  display:none;
 }
 
+#toggle:checked +.menu-toggle + .logo + .menu {
+  display: block;
 #toggle:checked +.menu-toggle + .logo + .menu {
   display: block;
 }
@@ -42,7 +55,14 @@ color:rgb(76, 179, 239);
 }
 #toggle:checked +.menu-toggle + .logo+  .menu +div {
   display: none;
+#toggle:checked +.menu-toggle + .logo  {
+  display: none;
 }
+#toggle:checked +.menu-toggle + .logo+  .menu +div {
+  display: none;
+}
+menu > ul{
+  list-style-type: none;
 menu > ul{
   list-style-type: none;
 }
@@ -62,19 +82,40 @@ nav{
   min-height:100px;
   height:auto;
   margin-bottom:30px;
+  align-items: center;
+  background-color: black;
+  color:white;
+  display: flex;
+  width:100%;
+  min-height:100px;
+  height:auto;
+  margin-bottom:30px;
 }
 .menu{
   flex:1;
   margin: 0;
   padding: 0px;
+  flex:1;
+  margin: 0;
+  padding: 0px;
 }
+
 
 .menu ul{
 display: flex;
 flex-direction: column;
 font-size: small;
 padding: 0;
+display: flex;
+flex-direction: column;
+font-size: small;
+padding: 0;
 }
+.logo{
+  flex:2;
+  justify-content: left;
+  font-size:x-large;
+  padding:10px;
 .logo{
   flex:2;
   justify-content: left;
@@ -146,6 +187,9 @@ footer{
 .container{
   height: 40%;
 }
+.container{
+  height: 40%;
+}
 .slider-wraper{
 position: relative;
 max-width: fit-content;
@@ -161,8 +205,22 @@ scroll-snap-type:x mandatory;
 scroll-behavior:smooth;
 box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
 border-radius: 0.5rem;
+display: flex;
+text-align: center;
+aspect-ratio: 16/9;
+overflow-x: auto;
+scroll-snap-type:x mandatory;
+scroll-behavior:smooth;
+box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+border-radius: 0.5rem;
 }
 .slider div{
+flex:1 0 100%;
+width: 330px;
+height: auto;
+object-fit:fill;
+position: relative;
+display: inline-block;
 flex:1 0 100%;
 width: 330px;
 height: auto;
@@ -190,8 +248,14 @@ width:70%;
 h1{
 text-align: center;
 width: 100%;}
+text-align: center;
+width: 100%;}
 
 .slideshow{
+justify-content: space-between;
+align-items:first baseline;
+display: flex;
+text-align: center;
 justify-content: space-between;
 align-items:first baseline;
 display: flex;
@@ -217,6 +281,11 @@ height: 90%;
 
 /*Introduction*/
 .welcome{
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   align-items: center;
   display: flex;
@@ -281,6 +350,9 @@ p{
   
 }
 
+.hobbies{
+  margin: 10px;
+  text-align: left;
 .hobbies{
   margin: 10px;
   text-align: left;
