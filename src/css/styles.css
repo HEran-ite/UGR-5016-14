@@ -551,14 +551,14 @@ text-align: center;
   }
   .welcome__intro {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     width:100%;
 
   }
   .welcome__intro__intro-pic{
     width: 50%;
   }
-  .welcome__intro h1{
+  .welcome  h1{
     display:block;
   }
   .welcome__intro__blockquote{
