@@ -36,7 +36,7 @@
 
         <div class="container__slider-wrapper">      
          <div class="container__slider-wrapper__slider">
-             <div class="container__slider-wrapper__slider__slide-1" id="slide-1">
+             <div class="container__slider-wrapper__slider__slide  container__slider-wrapper__slider__slide-1 " id="slide-1">
                  <label for="slide2"></label>
                  <div class="container__slider-wrapper__slider__slide-1__number-text">1/ 4</div>
                  
@@ -48,14 +48,14 @@
              </div>
 
 
-             <div class="container__slider-wrapper__slider__slide-2" id="slide-2">
+             <div class="container__slider-wrapper__slider__slide  container__slider-wrapper__slider__slide-2 " id="slide-2">
                  <div class="container__slider-wrapper__slider__slide-2__number-text">2/ 4</div>
                  <label for="slide3"></label>
                  <img src="images/study.jpeg" style="width:80%" alt="pic2">
                  <div class="container__slider-wrapper__slider__slide__text"> "Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios."</div>
              </div>
 
-             <div  class="container__slider-wrapper__slider__slide-3" id="slide-3">
+             <div  class="container__slider-wrapper__slider__slide  container__slider-wrapper__slider__slide-3 " id="slide-3">
                 <div class="container__slider-wrapper__slider__slide-1__number-text">3 / 4</div>
                 <label for="slide4"></label>
                 <img src="images/mypic2.jpeg" style="width:50%" alt="pic1">
@@ -63,17 +63,25 @@
                     </div>
             </div>
                  
-             <div class="container__slider-wrapper__slider__slide-4" id="slide-4">
+             <div class="container__slider-wrapper__slider__slide  container__slider-wrapper__slider__slide-4 " id="slide-4">
                  <div class="container__slider-wrapper__slider__slide-4__number-text">4 / 4</div>
                  <label for="slide1"></label>
                  <img src="images/back.jpeg" style="width:100%" alt="pic3">
                  <div class="container__slider-wrapper__slider__slide__text">
                      "Apart from my technical skills, I also possess strong communication and interpersonal skills. I understand the importance of effective communication in software development, as it fosters collaboration and ensures that projects are completed successfully. I am a proactive learner and always strive to improve myself, whether it's through attending workshops, participating in hackathons, or engaging in online courses."
                  </div>
-             </div>
+                </div>
             </div>
-             </div>
-         </div>
+            <a class="container__slider-wrapper__slider__prev" onclick="plusSlides(-1)">❮</a>
+            <a class="container__slider-wrapper__slider__next" onclick="plusSlides(1)">❯</a>
+            <div style="text-align:center">
+                <span class="container__slider-wrapper__dot" onclick="currentSlide(1)"></span> 
+                <span class="container__slider-wrapper__dot" onclick="currentSlide(2)"></span> 
+                <span class="container__slider-wrapper__dot" onclick="currentSlide(3)"></span> 
+                <span class="container__slider-wrapper__dot" onclick="currentSlide(4)"></span> 
+                </div>
+        </div>    
+        </div>
          
      </section>
     <section class="welcome">
@@ -125,5 +133,6 @@
     </ul>
 
     </footer>
+    <script src="./js/Javascript.js"></script>
 </body>
 </html>
