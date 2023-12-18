@@ -4,99 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-</head>
-<body>
-   <nav>
-                <ul>
-                    <li>
-                        <a  href="index.html">HOME</a>
-                        <a  href="about-me.html">ABOUT ME </a>
-                        <a  href="education.html">EDUCATION</a>
-                        <a  href="skills.html">SKILLS</a>
-                        <a  href="resume.html">RESUME</a>
-                        <a  href="credentials.html">CREDIENTIALS</a>
-                    </li>
-                </ul>
-        
-        <div class="name">
-            <strong>Heran Eshetu</strong> 
-        </div>
-        <div>
-            <a href="#address">CONTACT</a>
-        </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-    </nav>
-    <h1>SKILLS</h1>
-    <figure>
+</head>
+<body class="has-background-info-light">
+    <nav class="navbar has-background-black " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand ">
+            <a role="button" class="navbar-burger mx-0" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span class='has-background-white' aria-hidden="true"></span>
+                <span class='has-background-white' aria-hidden="true"></span>
+                <span class='has-background-white' aria-hidden="true"></span>
+              </a>
+          <a class="navbar-item " href="https://bulma.io">
+            <strong class="title has-text-white">Heran Eshetu</strong> 
+          </a>
+        <div class="navbar-item " >
+                <a  class="has-text-white " href="#address" >CONTACT</a>  
+        </div>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a  class='navbar-item has-background-black has-text-white' href="index.html">HOME</a>
+            <a  class='navbar-item has-background-black has-text-white' href="about-me.html">ABOUT ME </a>
+            <a  class='navbar-item has-background-black has-text-white' href="education.html">EDUCATION</a>
+            <a  class='navbar-item has-background-black has-text-white' href="skills.html">SKILLS</a>
+            <a  class='navbar-item has-background-black has-text-white' href="resume.html">RESUME</a>
+            <a  class='navbar-item has-background-black has-text-white' href="credentials.html">CREDIENTIALS</a>
+    
+            </div>
+            </div>
+        </div>
+      
+          
+        </div>
+      </nav>
+    <div class="skills">
+    <h1 class="title is-1"> SKILLS</h1>
+    <figure class="skills__figure-1">
         <img src="images/figure.png" alt="" >
         <figcaption>figure.1 Rating my programming skills</figcaption>
     </figure>
-        <h2>Other skills </h2>
-        <h3>Language</h3>
-        <ul>
-            
-            <li>Amharic</li>
-            <li>English</li>
-            <li>Geez</li>
-            <li>Korean</li>
-        </ul>
-        <h3>Professional skills</h3>
-        <ul>
-            
-            <li>Dedicated</li>
-            <li>Multitasker</li>
-            <li>Punctual</li>
-            <li>Leadership skills</li>
-        </ul>
-        <h3>Social skills</h3>
-        <ul>
-            
-            <li>Emotional Intelligence</li>
-            <li>Communicating skills</li>
-            <li>Open minded</li>
-            <li>Conflict Resolution</li>
-        </ul>
-        <h3>Life skills</h3>
-        <ul>
-            
-            <li>Financial literacy</li>
-            <li>Stress management</li>
-            <li>Decision-making</li>
-            <li>Conflict Resolution</li>
-        </ul>
-        
+    
+        <h2 class="title is-4">Other skills </h2>
+        <div class="skills__big-div columns">
+            <div class="skills__big-div__segment column is-6-tablet">
+                <h3 class="title is-5">Language</h3>
+                <ul class="px-5">
+                    
+                    <li>Amharic</li>
+                    <li>English</li>
+                    <li>Geez</li>
+                    <li>Korean</li>
+                </ul>
+            </div>
+                <div class="skills__big-div__segment column is-6-tablet">
+                <h3 class="title is-5">Professional skills</h3>
+                <ul class="px-5">
+                    <li>Dedicated</li>
+                    <li>Multitasker</li>
+                    <li>Punctual</li>
+                    <li>Leadership skills</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skills__big-div columns">
+            <div class="skills__big-div__segment column is-6-tablet">
+                <h3 class="title is-5"> Social skills</h3>
+                <ul class="px-5">
+                    
+                    <li>Emotional Intelligence</li>
+                    <li>Communicating skills</li>
+                    <li>Open minded</li>
+                    <li>Conflict Resolution</li>
+                </ul>
+            </div>
+            <div class="skills__big-div__segment column is-6-tablet">
+                <h3 class="title is-5">Life skills</h3>
+                <ul class="px-5">
+                    
+                    <li>Financial literacy</li>
+                    <li>Stress management</li>
+                    <li>Decision-making</li>
+                    <li>Conflict Resolution</li>
+                </ul>
+            </div>
+        </div>
   
-    <a href="https://github.com/HEran-ite">Projects>></a>
-    <footer>
-        <address id="address"> 
-            <br>
-            <div>
-               <p>Phone: +25180499718 </p>
-            </div>
+    <a class="skills__projects title has-text-info" href="https://github.com/HEran-ite">Projects>> </a>
+    </div>
+    <hr>
+    <footer class="footer has-background-info-light">
+        <h1 class="title">CONTACT</h1>
+        <div class="content columns">
             
-            <div>
-                <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
-            </div>
-            <div>
-                <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
-            </div>
-            <div>
-                <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
-            </div>
-            <div>
-                <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
-            </div>
-            
-        </address>
-        <ul>
-            <li>
-                <a  href="about-me.html">ABOUT ME </a>
-                <a  href="education.html">EDUCATION</a>
-                <a  href="skills.html">SKILLS</a>
-                <a  href="resume.html">RESUME</a>
-                <a  href="credentials.html">CREDIENTIALS</a>
-            </li>
-        </ul>
-        </footer>
+            <address id="address" class="columns is-8-tablet"> 
+                <br>
+                <div class="column  is-2-mobile ">
+                   <p class="">Phone: +25180499718 </p>
+                </div>
+                
+                <div class="column  is-2-mobile ">
+                    <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
+                </div>
+                <div class="column  is-2-mobile">
+                    <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
+                </div>
+                <div class="column  is-2-mobile ">
+                    <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
+                </div>
+                <div class="column  is-2-mobile">
+                    <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
+                </div>
+                
+            </address>
+            <ul class="column is-4-tablet">
+                <li>
+                    <a  href="about-me.html">ABOUT ME </a>
+                    <a  href="education.html">EDUCATION</a>
+                    <a  href="skills.html">SKILLS</a>
+                    <a  href="resume.html">RESUME</a>
+                    <a  href="credentials.html">CREDIENTIALS</a>
+                </li>
+            </ul>
+     
+        </div>
+      </footer>
+    <script src="./js/Javascript.js"></script>
 </body>
 </html>

@@ -3,84 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me </title>
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
-    <nav>
-                <ul>
-                    <li>
-                        <a  href="index.html">HOME</a>
-                        <a  href="about-me.html">ABOUT ME </a>
-                        <a  href="education.html">EDUCATION</a>
-                        <a  href="skills.html">SKILLS</a>
-                        <a  href="resume.html">RESUME</a>
-                        <a  href="credentials.html">CREDIENTIALS</a>
-                    </li>
-                
-                </ul>
-
-        <div class="name">
-            <strong>Heran Eshetu</strong> 
+<body class="has-background-info-light ">
+    <nav class="navbar has-background-black " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand ">
+            <a role="button" class="navbar-burger mx-0" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span class='has-background-white' aria-hidden="true"></span>
+                <span class='has-background-white' aria-hidden="true"></span>
+                <span class='has-background-white' aria-hidden="true"></span>
+              </a>
+          <a class="navbar-item " href="https://bulma.io">
+            <strong class="title has-text-white">Heran Eshetu</strong> 
+          </a>
+        <div class="navbar-item " >
+                <a  class="has-text-white " href="#address" >CONTACT</a>  
         </div>
-        <div>
-            <a href="#address">CONTACT</a>
         </div>
-
-    </nav>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a  class='navbar-item has-background-black has-text-white' href="index.html">HOME</a>
+            <a  class='navbar-item has-background-black has-text-white' href="about-me.html">ABOUT ME </a>
+            <a  class='navbar-item has-background-black has-text-white' href="education.html">EDUCATION</a>
+            <a  class='navbar-item has-background-black has-text-white' href="skills.html">SKILLS</a>
+            <a  class='navbar-item has-background-black has-text-white' href="resume.html">RESUME</a>
+            <a  class='navbar-item has-background-black has-text-white' href="credentials.html">CREDIENTIALS</a>
     
-    <section>
-        <h1>ABOUT ME </h1>
-        <img src="images/my-pic.jpeg" alt="Heran Eshetu">
-            <p> Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
-
-                Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
-                
+            </div>
+            </div>
+        </div>
+      
+          
+        </div>
+      </nav>
+    
+    <section class="description px-3">
+        <h1 class="title is-1 ">ABOUT ME </h1>
+        <div class="description__wrap columns ">
+        <img class='description__wrap__my-pic column is-4-tablet'src="images/my-pic.jpeg" alt="Heran Eshetu">
+        <div class="description__wrap__text-audio column is-7-tablet">
+            <p> 
+                Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
+            </p>  
+            <p>
+                 Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
+            </p> 
+            <p> 
                 I believe that software engineering is not only about writing code but also about problem-solving and creativity. It requires a combination of analytical thinking, attention to detail, and the ability to collaborate effectively with others. I am constantly seeking to enhance my technical skills and stay up-to-date with the latest advancements in the field.
             </p>
             <audio controls>
                 <source src="images/ElevenLabs_2023-11-25T17_34_59_Rachel_pre_s50_sb75_se0_b_m2.mp3" type="audio/mp3">
               Your browser does not support the audio element.
               </audio>
-            </section>
-    <section>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Crocheting</li>
-            <li>Writing</li>
-            <li>Photography</li>
-            <li>Cooking</li>
+            </div>
+        </div>
+    </section>
+    <section class="hobbies">
+        <h2 class="title">Hobbies</h2>
+        <ul class="hobbies__hobby columns mx-3">
+            <li class="column is-2-tablet">Crocheting</li>
+            <li class="column is-2-tablet">Writing</li>
+            <li class="column is-2-tablet">Photography</li>
+            <li class="column is-2-tablet">Cooking</li>
         </ul>
     </section>
-    <section>
-        <h2>Places I visited </h2>
-        <div>
+    <section class="visited">
+        <h2 class="title">Places I visited </h2>
+        <div class="visited__images columns ">
+        <div class="column is-3-tablet has-text-centered">
             <img src="https://lh3.googleusercontent.com/p/AF1QipMClgtaj2eo5i5iRFTc9GJ9iREbb6glJNWAr5Rf" alt="Debre-Libanos">
-            <h3>Debre-Libanos Gedam</h3>
-            <p>Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
+            <h3 class="title is-6">Debre-Libanos Gedam</h3>
+            <p class="visited__images__debre">Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
             <a href="https://www.destimap.com/index.php?act=attraction&a=Debre-Libanos%2C-Debre-Libanos%2C-Ethiopia">Explore>></a>
         </div>
-        <div>
+        <div class="column is-3-tablet has-text-centered">
             <img src="https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg" alt="Lalibela">
-            <h3>Lalibela</h3>
+            <h3 class="title is-6">Lalibela</h3>
             <p>In a mountainous region in the heart of Ethiopia, some 645 km from Addis Ababa, eleven medieval monolithic churches were carved out of rock.</p>
             <a href="https://en.wikipedia.org/wiki/Lalibela">Explore>></a>
         </div>
-        <div>
+        <div class="column is-3-tablet has-text-centered">
             <img src="https://static.wixstatic.com/media/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg/v1/fill/w_1080,h_720,al_c,q_85,enc_auto/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg" alt="">
-            <h3>Ethiopia Museum of Art and Science</h3>
+            <h3 class="title is-6">Ethiopia Museum of Art and Science</h3>
             <p>State-of the-art Science Museum built in-front of the national palace/ behind Sheraton Addis Hotel </p>
             <a href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
         </div>
-        <div>
-            <img src="images/kidist-maryam.jpeg" alt="Bezawit kidist Maryam Washa Gedam">
-            <h3>Bezawit kidist Maryam Washa Gedam</h3>
+        <div class="column is-3-tablet has-text-centered image ">
+            <div class="image is-">
+            <img  src="images/kidist-maryam.jpeg" alt="Bezawit kidist Maryam Washa Gedam" >
+            </div>
+            <h3 class="title is-6">Bezawit kidist Maryam Washa Gedam</h3>
             <p>Bezawit kidist Maryam Washa Gedam is found in Bole arabsa.</p>
             <a href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
         </div>
+        </div>
     </section>
-    <h2>Accomplishments</h2>
+    <div class="acomp">
+    <h2 class="title is-4">Accomplishments</h2>
 
-<table>
+<table class="acomp__table">
   <tr>
     <th>Task</th>
     <th>No progress</th>
@@ -124,28 +147,33 @@
     <td></td>
   </tr>
 </table>
-    <footer>
-        <address id="address"> 
+</div>
+   <hr>
+   <footer class="footer ">
+    <h1 class="title">CONTACT</h1>
+    <div class="content columns">
+        
+        <address id="address" class="columns is-8-tablet"> 
             <br>
-            <div>
-               <p>phone: +25180499718 </p>
+            <div class="column  is-2-mobile ">
+               <p class="">Phone: +25180499718 </p>
             </div>
             
-            <div>
+            <div class="column  is-2-mobile ">
                 <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
             </div>
-            <div>
+            <div class="column  is-2-mobile">
                 <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
             </div>
-            <div>
+            <div class="column  is-2-mobile ">
                 <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
             </div>
-            <div>
+            <div class="column  is-2-mobile">
                 <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
             </div>
             
         </address>
-        <ul>
+        <ul class="column is-4-tablet">
             <li>
                 <a  href="about-me.html">ABOUT ME </a>
                 <a  href="education.html">EDUCATION</a>
@@ -154,6 +182,9 @@
                 <a  href="credentials.html">CREDIENTIALS</a>
             </li>
         </ul>
-     </footer>
+ 
+    </div>
+  </footer>
+    <script src="./js/Javascript.js"></script>
 </body>
 </html>
