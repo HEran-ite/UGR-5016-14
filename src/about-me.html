@@ -3,157 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me </title>
+    <title>Home page</title>
+    <link href="../src/dist/output.css" rel="stylesheet" >
 </head>
-<body>
-    <nav>
-                <ul>
-                    <li>
-                        <a  href="index.html">HOME</a>
-                        <a  href="about-me.html">ABOUT ME </a>
-                        <a  href="education.html">EDUCATION</a>
-                        <a  href="skills.html">SKILLS</a>
-                        <a  href="resume.html">RESUME</a>
-                        <a  href="credentials.html">CREDIENTIALS</a>
-                    </li>
-                
-                </ul>
-
-        <div class="name">
-            <strong>Heran Eshetu</strong> 
+<body class="bg-blue-100">
+    <nav class="bg-black flex justify-between" role="navigation">
+        <div class="flex items-center justify-between px-4 py-2 w-full">
+            <button class="text-white cursor-pointer focus:outline-none md:hidden" aria-label="menu" aria-expanded="false" id="toggle">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <rect width="24" height="2" y="5" rx="1" />
+                    <rect width="24" height="2" y="11" rx="1" />
+                    <rect width="24" height="2" y="17" rx="1" />
+                </svg>
+            </button>
+            <a class="text-white text-4xl font-bold" href="https://yourwebsite.com">Heran Eshetu</a>
+            
+        <div class="hidden flex flex-col md:flex md:flex-row md:justify-end md:items-center" id="navbarBasicExample">
+            <a class="text-white px-4 py-2 hover:bg-blue-100 rounded" href="index.html">HOME</a>
+            <a class="text-white px-4 py-2 hover:bg-blue-100" href="about-me.html">ABOUT ME</a>
+            <a class="text-white px-4 py-2 hover:bg-blue-100" href="education.html">EDUCATION</a>
+            <a class="text-white px-4 py-2 hover:bg-blue-100" href="skills.html">SKILLS</a>
+            <a class="text-white px-4 py-2 hover:bg-blue-100" href="resume.html">RESUME</a>
+            <a class="text-white px-4 py-2 hover:bg-blue-100" href="credentials.html">CREDENTIALS</a>
         </div>
-        <div>
-            <a href="#address">CONTACT</a>
+        <div class=" md:flex items-center ">
+            <a class="text-white mx-4" href="#address">CONTACT</a>
         </div>
+    </div>
 
     </nav>
     
-    <section>
-        <h1>ABOUT ME </h1>
-        <img src="images/my-pic.jpeg" alt="Heran Eshetu">
-            <p> Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
-
-                Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
-                
+    <section class="description px-3">
+        <h1 class="text-6xl py-10 ">ABOUT ME </h1>
+        <div class="description__wrap flex flex-col md:flex-row gap-10">
+        <img class='description__wrap__my-pic md:w-1/2'src="images/my-pic.jpeg" alt="Heran Eshetu">
+        <div class="description__wrap__text-audio flex flex-col gap-4">
+            <p> 
+                Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
+            </p>  
+            <p>
+                 Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
+            </p> 
+            <p> 
                 I believe that software engineering is not only about writing code but also about problem-solving and creativity. It requires a combination of analytical thinking, attention to detail, and the ability to collaborate effectively with others. I am constantly seeking to enhance my technical skills and stay up-to-date with the latest advancements in the field.
             </p>
             <audio controls>
                 <source src="images/ElevenLabs_2023-11-25T17_34_59_Rachel_pre_s50_sb75_se0_b_m2.mp3" type="audio/mp3">
               Your browser does not support the audio element.
               </audio>
-            </section>
-    <section>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Crocheting</li>
-            <li>Writing</li>
-            <li>Photography</li>
-            <li>Cooking</li>
+            </div>
+        </div>
+    </section>
+    <section class="hobbies">
+        <h2 class="text-4xl my-10">Hobbies</h2>
+        <ul class="hobbies__hobby flex flex-col md:flex-row justify-evenly mx-3">
+            <li class="column is-2-tablet">Crocheting</li>
+            <li class="column is-2-tablet">Writing</li>
+            <li class="column is-2-tablet">Photography</li>
+            <li class="column is-2-tablet">Cooking</li>
         </ul>
     </section>
-    <section>
-        <h2>Places I visited </h2>
-        <div>
-            <img src="https://lh3.googleusercontent.com/p/AF1QipMClgtaj2eo5i5iRFTc9GJ9iREbb6glJNWAr5Rf" alt="Debre-Libanos">
-            <h3>Debre-Libanos Gedam</h3>
-            <p>Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
-            <a href="https://www.destimap.com/index.php?act=attraction&a=Debre-Libanos%2C-Debre-Libanos%2C-Ethiopia">Explore>></a>
+    <section class="visited">
+        <h2 class="text-4xl my-10">Places I visited </h2>
+        <div class="visited__images flex flex-col justify-center md:flex-row gap-10 ">
+        <div class="text-center">
+            <img class= "h-96 w-1\/4" src="https://lh3.googleusercontent.com/p/AF1QipMClgtaj2eo5i5iRFTc9GJ9iREbb6glJNWAr5Rf" alt="Debre-Libanos">
+            <h3 class="text-xl">Debre-Libanos Gedam</h3>
+            <p class="visited__images__debre">Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
+            <a class="text-blue-800 underline" href="https://www.destimap.com/index.php?act=attraction&a=Debre-Libanos%2C-Debre-Libanos%2C-Ethiopia">Explore>></a>
         </div>
-        <div>
-            <img src="https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg" alt="Lalibela">
-            <h3>Lalibela</h3>
+        <div class="text-center">
+            <img class= "md:h-96 w-1\/4" src="https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg" alt="Lalibela">
+            <h3 class="text-xl">Lalibela</h3>
             <p>In a mountainous region in the heart of Ethiopia, some 645 km from Addis Ababa, eleven medieval monolithic churches were carved out of rock.</p>
-            <a href="https://en.wikipedia.org/wiki/Lalibela">Explore>></a>
+            <a class="text-blue-800 underline" href="https://en.wikipedia.org/wiki/Lalibela">Explore>></a>
         </div>
-        <div>
-            <img src="https://static.wixstatic.com/media/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg/v1/fill/w_1080,h_720,al_c,q_85,enc_auto/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg" alt="">
-            <h3>Ethiopia Museum of Art and Science</h3>
+        <div class="text-center">
+            <img class= "md:h-96 w-1\/4" src="https://static.wixstatic.com/media/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg/v1/fill/w_1080,h_720,al_c,q_85,enc_auto/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg" alt="">
+            <h3 class="text-xl">Ethiopia Museum of Art and Science</h3>
             <p>State-of the-art Science Museum built in-front of the national palace/ behind Sheraton Addis Hotel </p>
-            <a href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
+            <a class="text-blue-800 underline" href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
         </div>
-        <div>
-            <img src="images/kidist-maryam.jpeg" alt="Bezawit kidist Maryam Washa Gedam">
-            <h3>Bezawit kidist Maryam Washa Gedam</h3>
+        <div class="text-center">
+            <img class= " md:h-96 w-1\/4"  src="images/kidist-maryam.jpeg" alt="Bezawit kidist Maryam Washa Gedam" >
+            <h3 class="text-xl">Bezawit kidist Maryam Washa Gedam</h3>
             <p>Bezawit kidist Maryam Washa Gedam is found in Bole arabsa.</p>
-            <a href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
+            <a class="text-blue-800 underline" href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
+        </div>
         </div>
     </section>
-    <h2>Accomplishments</h2>
+    <div class="acomp">
+    <h2 class="text-4xl my-10">Accomplishments</h2>
 
-<table>
-  <tr>
-    <th>Task</th>
-    <th>No progress</th>
-    <th>In progress</th>
-    <th>Done</th>
-  </tr>
-  <tr>
-    <td>Diploma</td>
-    <td></td>
-    <td></td>
-    <td>&check;</td>
-  </tr>
-  <tr>
-    <td>Degree</td>
-    <td></td>
-    <td>&check;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Masters</td>
-    <td>&check;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>PHD</td>
-    <td>&check;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Online courses >3 </td>
-    <td></td>
-    <td></td>
-    <td>&check;</td>
-  </tr>
-  <tr>
-    <td>Trainings >3</td>
-    <td></td>
-    <td>&check;</td>
-    <td></td>
-  </tr>
-</table>
-    <footer>
-        <address id="address"> 
-            <br>
-            <div>
-               <p>phone: +25180499718 </p>
-            </div>
-            
-            <div>
-                <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
-            </div>
-            <div>
-                <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
-            </div>
-            <div>
-                <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
-            </div>
-            <div>
-                <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
-            </div>
-            
-        </address>
-        <ul>
-            <li>
-                <a  href="about-me.html">ABOUT ME </a>
-                <a  href="education.html">EDUCATION</a>
-                <a  href="skills.html">SKILLS</a>
-                <a  href="resume.html">RESUME</a>
-                <a  href="credentials.html">CREDIENTIALS</a>
-            </li>
-        </ul>
-     </footer>
+    <table class="border-collapse border border-black-300">
+        <thead>
+          <tr>
+            <th class="border border-gray-300 px-4 py-2">Task</th>
+            <th class="border border-gray-300 px-4 py-2">No progress</th>
+            <th class="border border-gray-300 px-4 py-2">In progress</th>
+            <th class="border border-gray-300 px-4 py-2">Done</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">Diploma</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2">&#10003;</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">Degree</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2">&#10003;</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">Masters</td>
+            <td class="border border-gray-300 px-4 py-2">&#10003;</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">PHD</td>
+            <td class="border border-gray-300 px-4 py-2">&#10003;</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">Online courses &gt;3</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2">&#10003;</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">Trainings &gt;3</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+            <td class="border border-gray-300 px-4 py-2">&#10003;</td>
+            <td class="border border-gray-300 px-4 py-2"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+</div>
+       <hr class='border-gray-200'>
+    <h1 class="text-6xl my-10">CONTACT</h1>  
+    <footer class="footer flex flex-col md:flex-row justify-between gap-10">
+    <address class="footer__address flex flex-row justify-evenly gap-10" id="address"> 
+        <div>
+           <p>Phone: +25180499718 </p>
+        </div>
+        
+        <div>
+            <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/heran-elala-110a88259/overlay/contact-info/"><img src="images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <div>
+            <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
+        </div>
+        <div>
+            <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
+        </div>
+        
+    </address>
+    <ul class="footer__footer-nav flex flex-row gap-2 self-center ">
+        <li> <a  href="about-me.html">ABOUT ME </a></li>
+        <li><a  href="education.html">EDUCATION</a></li>
+        <li><a href="skills.html">SKILLS</a> </li>
+         <li><a  href="resume.html">RESUME</a></li>
+        <li><a  href="credentials.html">CREDIENTIALS</a> </li>
+    </ul>
+
+    </footer>
+    <script src="./js/Javascript.js"></script>
 </body>
 </html>
