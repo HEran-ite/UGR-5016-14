@@ -1,159 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me </title>
+    <title>Home page</title>
+    <link rel="stylesheet" href="../src/css/main.css"> 
 </head>
-<body>
-    <nav>
-                <ul>
-                    <li>
-                        <a  href="index.html">HOME</a>
-                        <a  href="about-me.html">ABOUT ME </a>
-                        <a  href="education.html">EDUCATION</a>
-                        <a  href="skills.html">SKILLS</a>
-                        <a  href="resume.html">RESUME</a>
-                        <a  href="credentials.html">CREDIENTIALS</a>
+<body class="bg-info-subtle">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBasicExample" aria-controls="navbarBasicExample" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-brand" >
+            <h2>Heran Eshetu</h2>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarBasicExample">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">HOME</a>
                     </li>
-                
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about-me.html">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="education.html">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="skills.html">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="resume.html">RESUME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="credentials.html">CREDENTIALS</a>
+                    </li>
                 </ul>
-
-        <div class="name">
-            <strong>Heran Eshetu</strong> 
+            </div>
+            <div class="contact">
+                <a class=" text-white " href="#address">CONTACT</a>
+            </div>
         </div>
-        <div>
-            <a href="#address">CONTACT</a>
-        </div>
-
     </nav>
     
-    <section>
-        <h1>ABOUT ME </h1>
-        <img src="images/my-pic.jpeg" alt="Heran Eshetu">
-            <p> Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
-
-                Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
-                
+    <section class="description px-3">
+        <h1 class="mt-3">ABOUT ME </h1>
+        <div class="description__wrap row">
+        <img class='description__wrap__my-pic col-md-6 my-3'src="images/my-pic.jpeg" alt="Heran Eshetu">
+        <div class="description__wrap__text-audio col-md-6 align-self-center ">
+            <p> 
+                Currently, I am a software engineering student at the Addis Ababa Institute of Technology (AAiT) in Ethiopia. From a young age, I have been fascinated by technology and its ability to transform the world around us. This curiosity and enthusiasm have driven me to pursue a career in software engineering.
+            </p>  
+            <p>
+                 Throughout my academic journey, I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my theoretical knowledge to practical scenarios.
+            </p> 
+            <p> 
                 I believe that software engineering is not only about writing code but also about problem-solving and creativity. It requires a combination of analytical thinking, attention to detail, and the ability to collaborate effectively with others. I am constantly seeking to enhance my technical skills and stay up-to-date with the latest advancements in the field.
             </p>
             <audio controls>
                 <source src="images/ElevenLabs_2023-11-25T17_34_59_Rachel_pre_s50_sb75_se0_b_m2.mp3" type="audio/mp3">
               Your browser does not support the audio element.
               </audio>
-            </section>
-    <section>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Crocheting</li>
-            <li>Writing</li>
-            <li>Photography</li>
-            <li>Cooking</li>
+            </div>
+        </div>
+    </section>
+    <section class="hobbies px-3">
+        <h2 class="my-3">Hobbies</h2>
+        <ul class="hobbies__hobby row">
+            <li class="column col-md-3">Crocheting</li>
+            <li class="column col-md-3">Writing</li>
+            <li class="column col-md-3">Photography</li>
+            <li class="column col-md-3">Cooking</li>
         </ul>
     </section>
-    <section>
-        <h2>Places I visited </h2>
-        <div>
-            <img src="https://lh3.googleusercontent.com/p/AF1QipMClgtaj2eo5i5iRFTc9GJ9iREbb6glJNWAr5Rf" alt="Debre-Libanos">
-            <h3>Debre-Libanos Gedam</h3>
-            <p>Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
+    <section class="visited px-3">
+        <h2 class="my-3">Places I visited </h2>
+        <div class="visited__images text-center row ">
+        <div class="text-center my-1 col-md-3">
+            <img class= "w-75 h-75" src="https://lh3.googleusercontent.com/p/AF1QipMClgtaj2eo5i5iRFTc9GJ9iREbb6glJNWAr5Rf" alt="Debre-Libanos">
+            <h3 class="my-3">Debre-Libanos Gedam</h3>
+            <p class="visited__images__debre">Debre Libanos is a monastery in Ethiopia, lying northwest of Addis Ababa in the Semien Shewa Zone of the Oromia Region.</p>
             <a href="https://www.destimap.com/index.php?act=attraction&a=Debre-Libanos%2C-Debre-Libanos%2C-Ethiopia">Explore>></a>
         </div>
-        <div>
-            <img src="https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg" alt="Lalibela">
-            <h3>Lalibela</h3>
+        <div class="text-center my-1 col-md-3">
+            <img class= "w-75 h-75" src="https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg" alt="Lalibela">
+            <h3 class="my-3">Lalibela</h3>
             <p>In a mountainous region in the heart of Ethiopia, some 645 km from Addis Ababa, eleven medieval monolithic churches were carved out of rock.</p>
             <a href="https://en.wikipedia.org/wiki/Lalibela">Explore>></a>
         </div>
-        <div>
-            <img src="https://static.wixstatic.com/media/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg/v1/fill/w_1080,h_720,al_c,q_85,enc_auto/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg" alt="">
-            <h3>Ethiopia Museum of Art and Science</h3>
+        <div class="text-center my-1 col-md-3">
+            <img class= "w-75 h-75" src="https://static.wixstatic.com/media/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg/v1/fill/w_1080,h_720,al_c,q_85,enc_auto/16e114_4a4ad004acff493e8b636ae90612da1d~mv2.jpg" alt="">
+            <h3 class="my-3">Ethiopia Museum of Art and Science</h3>
             <p>State-of the-art Science Museum built in-front of the national palace/ behind Sheraton Addis Hotel </p>
             <a href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
         </div>
-        <div>
-            <img src="images/kidist-maryam.jpeg" alt="Bezawit kidist Maryam Washa Gedam">
-            <h3>Bezawit kidist Maryam Washa Gedam</h3>
+        <div class="text-center my-1 col-md-3">
+            <img class= "w-75 h-75"  src="images/kidist-maryam.jpeg" alt="Bezawit kidist Maryam Washa Gedam" >
+            <h3 class="my-3">Bezawit kidist Maryam Washa Gedam</h3>
             <p>Bezawit kidist Maryam Washa Gedam is found in Bole arabsa.</p>
             <a href="https://www.youtube.com/watch?v=Q51jCWzKVYU">Explore>></a>
         </div>
+        </div>
     </section>
-    <h2>Accomplishments</h2>
+    <div class="acomp pt-5 my-5 px-2">
+    <h2 class="my-5 pt-5">Accomplishments</h2>
 
-<table>
-  <tr>
-    <th>Task</th>
-    <th>No progress</th>
-    <th>In progress</th>
-    <th>Done</th>
-  </tr>
-  <tr>
-    <td>Diploma</td>
-    <td></td>
-    <td></td>
-    <td>&check;</td>
-  </tr>
-  <tr>
-    <td>Degree</td>
-    <td></td>
-    <td>&check;</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Masters</td>
-    <td>&check;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>PHD</td>
-    <td>&check;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Online courses >3 </td>
-    <td></td>
-    <td></td>
-    <td>&check;</td>
-  </tr>
-  <tr>
-    <td>Trainings >3</td>
-    <td></td>
-    <td>&check;</td>
-    <td></td>
-  </tr>
-</table>
-    <footer>
-        <address id="address"> 
-            <br>
-            <div>
-               <p>phone: +25180499718 </p>
-            </div>
-            
-            <div>
-                <a href="mailto:herieshetu@gmail.com" ><img src="images/email.png" alt="G-mail"></a>
-            </div>
-            <div>
-                <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
-            </div>
-            <div>
-                <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img src="images/ig.png" alt="Instagram"></a>
-            </div>
-            <div>
-                <a href="t.me/Heranite"><img src="images/tg.png" alt="Telegram"></a>
-            </div>
-            
-        </address>
-        <ul>
-            <li>
-                <a  href="about-me.html">ABOUT ME </a>
-                <a  href="education.html">EDUCATION</a>
-                <a  href="skills.html">SKILLS</a>
-                <a  href="resume.html">RESUME</a>
-                <a  href="credentials.html">CREDIENTIALS</a>
-            </li>
-        </ul>
-     </footer>
+    <table class="container-fluid border border-black px-5 my-5 ">
+          <tr>
+            <th class="border border-black px-4 py-2 text-bg-primary">Task</th>
+            <th class="border border-black px-4 py-2 text-bg-danger">No progress</th>
+            <th class="border border-black px-4 py-2 text-bg-warning">In progress</th>
+            <th class="border border-black px-4 py-2 text-bg-success">Done</th>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2">Diploma</td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2">&#10003;</td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2">Degree</td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2">&#10003;</td>
+            <td class="border border-black px-4 py-2"></td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2">Masters</td>
+            <td class="border border-black px-4 py-2">&#10003;</td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2"></td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2">PHD</td>
+            <td class="border border-black px-4 py-2">&#10003;</td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2"></td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2">Online courses &gt;3</td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2">&#10003;</td>
+          </tr>
+          <tr>
+            <td class="border border-black px-4 py-2">Trainings &gt;3</td>
+            <td class="border border-black px-4 py-2"></td>
+            <td class="border border-black px-4 py-2">&#10003;</td>
+            <td class="border border-black px-4 py-2"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <hr class='bg-black'>
+    <h1 class="mb-5 ">CONTACT</h1>  
+    <footer class="footer row justify-content-evenly ">
+    <address class="footer__address col-7 row" id="address"> 
+        <div class="col-4 ">
+           <p>Phone: +25180499718 </p>
+        </div>
+        
+        <div  class="col-2 ">
+            <a href="mailto:herieshetu@gmail.com" ><img class="img-fluid" src="images/email.png" alt="G-mail"></a>
+        </div>
+        <div  class="col-2">
+            <a href="https://www.linkedin.com/in/heran-elala-110a88259/overlay/contact-info/"><img class="img-fluid" src="images/linkedin.png" alt="linkedin"></a>
+        </div>
+        <div  class="col-2">
+            <a href="https://instagram.com/heranite_?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"><img class="img-fluid" src="images/ig.png" alt="Instagram"></a>
+        </div>
+        <div  class="col-2">
+            <a href="t.me/Heranite"><img class="img-fluid" src="images/tg.png" alt="Telegram"></a>
+        </div>
+        
+    </address>
+    <ul class="footer__footer-nav col-5 text-end row  ">
+        <li class="list-unstyled"><a class="px-1" href="about-me.html">ABOUT ME </a>
+            <a class="px-1"href="education.html">EDUCATION</a>
+            <a class="px-1" href="skills.html">SKILLS</a> 
+            <a class="px-1" href="resume.html">RESUME</a>
+            <a class="px-1" href="credentials.html">CREDIENTIALS</a>
+        </li>
+    </ul>
+
+    </footer>
+    <script src="./js/Javascript.js"></script>
 </body>
 </html>
